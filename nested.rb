@@ -87,7 +87,7 @@ def adding_matz
      }
      
   # new_hash.merge!(programmer_hash)
-  
+  Hash[*programmer_hash.to_a.unshift(new_hash.to_a.flatten).flatten]
 end
 
 def changing_alan
